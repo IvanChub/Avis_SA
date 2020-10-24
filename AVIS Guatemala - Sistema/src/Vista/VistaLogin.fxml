@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.VistaLoginControlador">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="700.0">
+         <left>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #00B9AE;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="319.0" fitWidth="243.0" layoutX="54.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imágenes/LogoAvis.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtUsuario" layoutX="105.0" layoutY="197.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #00B9AE; -fx-border-width: 0px 0px 2px 0px;" />
+                  <FontAwesomeIcon fill="#00b9ae" glyphName="USER" layoutX="62.0" layoutY="224.0" size="2em" />
+                  <PasswordField fx:id="txtClave" layoutX="105.0" layoutY="271.0" promptText="Contraseña" style="-fx-background-color: transparent; -fx-border-color: #00B9AE; -fx-border-width: 0px 0px 2px 0px;" />
+                  <FontAwesomeIcon fill="#00b9ae" glyphName="KEY" layoutX="59.0" layoutY="298.0" size="2em" />
+                  <FontAwesomeIcon fill="#00b9ae" glyphName="USERS" layoutX="135.0" layoutY="114.0" size="5em" />
+                  <Button fx:id="btnLogin" layoutX="116.0" layoutY="354.0" mnemonicParsing="false" onAction="#logUsuario" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #00B9AE;" text="Iniciar Sesión" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Hyperlink layoutX="76.0" layoutY="445.0" text="¿Ha olvidado su contraseña?" textFill="#00b9ae" />
+                  <Button fx:id="btnCerrar" layoutX="298.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrar" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+                     <graphic>
+                        <FontAwesomeIcon fill="#00b9ae" glyphName="CLOSE" size="1.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

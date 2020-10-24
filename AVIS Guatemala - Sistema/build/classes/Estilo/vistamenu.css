@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+.mainVBox{
+    -fx-background-color: #00B9AE;
+}
+
+.mainButton:hover{
+    -fx-background-color: #037171;
+}
+
+.mainButton:pressed{
+    -fx-background-color: #03312E;
+}
+
+.mainPanelGeneral{
+    -fx-background-color: #FFFFE0;
+}

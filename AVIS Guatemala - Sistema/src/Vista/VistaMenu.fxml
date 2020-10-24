@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="980.0" prefWidth="1900.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.VistaMenuControlador">
+    <stylesheets>
+        <URL value="@/Estilo/vistamenu.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="-2.0" layoutY="-4.0" prefHeight="980.0" prefWidth="396.0" styleClass="mainVBox" stylesheets="@../Estilo/vistamenu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="315.0" prefWidth="396.0">
+               <children>
+                  <ImageView fitHeight="320.0" fitWidth="248.0" layoutX="76.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imágenes/LogoAvis.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="btnUsuario" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambioPanel" prefHeight="65.0" prefWidth="401.0" stylesheets="@../Estilo/vistamenu.css" text="Usuarios" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER_PLUS" size="1.5em" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnBeneficiario" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambioPanel" prefHeight="65.0" prefWidth="401.0" stylesheets="@../Estilo/vistamenu.css" text="Beneficiarios" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SLIDESHARE" size="1.5em" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnPacientes" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="413.0" stylesheets="@../Estilo/vistamenu.css" text="Pacientes" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="1.5em" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnBecados" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="65.0" prefWidth="407.0" stylesheets="@../Estilo/vistamenu.css" text="Becados" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5em" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnHistorialesMedicos" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="97.0" prefWidth="401.0" stylesheets="@../Estilo/vistamenu.css" text="Historiales Médicos" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="MEDKIT" size="1.5em" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <VBox prefHeight="308.0" prefWidth="396.0" />
+            <Button fx:id="btnCerrarSesion" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#CerrarSesion" prefHeight="97.0" prefWidth="403.0" stylesheets="@../Estilo/vistamenu.css" text="Cerrar Sesión" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_CIRCLE_RIGHT" size="1.5em" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="mainVBox" />
+                  <String fx:value="mainButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane fx:id="stakpanel" layoutX="368.0" layoutY="1.0" prefHeight="980.0" prefWidth="1528.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="pnlBecados" prefHeight="200.0" prefWidth="200.0" styleClass="mainPanelGeneral" stylesheets="@../Estilo/vistamenu.css" />
+            <Pane fx:id="pnlHistorialesMedicos" prefHeight="200.0" prefWidth="200.0" styleClass="mainPanelGeneral" stylesheets="@../Estilo/vistamenu.css" />
+            <Pane fx:id="pnlPacientes" prefHeight="200.0" prefWidth="200.0" stylesheets="@../Estilo/vistamenu.css" />
+            <Pane fx:id="pnlUsuarios" prefHeight="200.0" prefWidth="200.0" styleClass="mainPanelGeneral" stylesheets="@../Estilo/vistamenu.css" />
+            <Pane fx:id="pnlBeneficiarios" prefHeight="980.0" prefWidth="1502.0" styleClass="mainPanelGeneral" stylesheets="@../Estilo/vistamenu.css">
+               <children>
+                  <Label layoutX="565.0" layoutY="14.0" text="Beneficiarios" textFill="#037171">
+                     <font>
+                        <Font size="60.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="#037171" glyphName="SLIDESHARE" />
+                     </graphic>
+                  </Label>
+                  <TitledPane layoutX="95.0" layoutY="350.0" prefHeight="200.0" prefWidth="1385.0" text="Datos del Encargado" />
+                  <TitledPane layoutX="95.0" layoutY="114.0" prefHeight="200.0" prefWidth="1385.0" text="Datos del Beneficiario" />
+                  <TitledPane layoutX="95.0" layoutY="586.0" prefHeight="200.0" prefWidth="1385.0" text="Datos de la Vivienda" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
